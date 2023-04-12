@@ -1,11 +1,11 @@
-### Image-Transformation
-### Aim
+# Image-Transformation
+## Aim
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
-### Software Required:
+## Software Required:
 Anaconda - Python 3.7
 
-### Algorithm:
+## Algorithm:
 ### Step 1:
 
 Import the necessary libraries and read the original image and save it as a image variable.
@@ -38,35 +38,33 @@ Crop the image using cropped_img=input_img[20:150,60:230].
 
 Display all the Transformed images and end the program.
 
-### Program:
+## Program:
 
+```
 Developed By:Silambarasan K
 Register Number:2122212300101
+```
 i)Image Translation
 ```
+
 import numpy as np
 import cv2
 import matplotlib.pyplot as plt
 
 input_image = cv2.imread ("car.png")
-
 input_image = cv2. cvtColor (input_image, cv2. COLOR_BGR2RGB)
-
 plt. axis('off')
-
 plt.imshow(input_image)
 plt. show()
 
 rows, cols, dim = input_image.shape
-
 M = np. float32([[1, 0, 50],
                  [0, 1, 100],
                  [0, 0, 1]])
 
 translated_image = cv2.warpPerspective (input_image, M, (cols, rows))
 
-plt.axis("off")
-
+plt.axis("o
 plt.imshow(translated_image)
 plt.show()
 ```
@@ -77,24 +75,18 @@ import cv2
 import matplotlib.pyplot as plt
 
 input_image = cv2.imread ("car.png")
-
 input_image = cv2. cvtColor (input_image, cv2. COLOR_BGR2RGB)
-
 plt. axis('off')
-
 plt.imshow(input_image)
 plt. show()
 
 rows, cols, dim = input_image.shape
-
 M = np. float32([[1, 0, 50],
                  [0, 1, 100],
                  [0, 0, 1]])
-
 translated_image = cv2.warpPerspective (input_image, M, (cols, rows))
 
 plt.axis("off")
-
 plt.imshow(translated_image)
 plt.show()
 ```
