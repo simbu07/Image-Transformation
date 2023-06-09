@@ -1,11 +1,11 @@
 # Image-Transformation
-## Aim
+### Aim
 To perform image transformation such as Translation, Scaling, Shearing, Reflection, Rotation and Cropping using OpenCV and Python.
 
-## Software Required:
+### Software Required:
 Anaconda - Python 3.7
 
-## Algorithm:
+### Algorithm:
 ### Step 1:
 
 Import the necessary libraries and read the original image and save it as a image variable.
@@ -38,13 +38,13 @@ Crop the image using cropped_img=input_img[20:150,60:230].
 
 Display all the Transformed images and end the program.
 
-## Program:
+### Program:
 
 ```
 Developed By:Silambarasan K
 Register Number:2122212300101
 ```
-i)Image Translation
+**i)Image Translation**
 ```
 
 import numpy as np
@@ -68,7 +68,7 @@ plt.axis("o
 plt.imshow(translated_image)
 plt.show()
 ```
-ii) Image Scaling
+**ii) Image Scaling**
 ```
 import numpy as np
 import cv2
@@ -90,7 +90,7 @@ plt.axis("off")
 plt.imshow(translated_image)
 plt.show()
 ```
-iii)Image shearing
+**iii)Image shearing**
 ```
 import numpy as np
 import cv2
@@ -118,7 +118,7 @@ plt.axis('off')
 plt.imshow(sheared_yaxis)
 plt.show()
 ```
-iv)Image Reflection
+**iv)Image Reflection**
 ```
 import numpy as np
 import cv2
@@ -146,7 +146,7 @@ plt.axis('off')
 plt.imshow(reflected_yaxis)
 plt.show()
 ```
-v)Image Rotation
+**v)Image Rotation**
 ```
 import numpy as np
 import cv2
@@ -168,7 +168,7 @@ plt.axis('off')
 plt.imshow(rotated_image)
 plt.show()
 ```
-vi)Image Cropping
+**vi)Image Cropping**
 ```
 import numpy as np
 import cv2
